@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AvactisSuite">
+
+ <!--<test name="Registration_Test">
+   <classes>
+      <class name="project.register.RegistrationTest"/>
+    </classes>
+  </test> -->
+<!-- <suite thread-count="1" verbose="1" name="AvactisSuite" annotations="JDK" parallel="tests">
+     <test name="Registration_Test">
+    <classes>
+      <class name="project.register.RegistrationTest"/>
+    </classes>
+  </test> 
+    <test name="Login_Test">
+    <classes>
+      <class name="project.login.LoginTest"/>
+    </classes>
+  </test> 
+    <test name="RegisteredUser_Test">
+    <classes>
+      <class name="project.RegandGuestUser.RegisteredUserShoppingTest"/>
+    </classes>
+  </test> 
+   <test name="GuestUser_Test">
+    <classes>
+      <class name="project.RegandGuestUser.GuestUserShoppingTest"/>
+    </classes>
+  </test> 
+  <test name="Admin_Test">
+    <classes>
+      <class name="project.AdminTest.AdminTest"/>
+    </classes>
+  </test>
+ -->
+  
+  <test name="Firefox_Test">
+  <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="project.register.RegistrationTest"/>
+      <class name="project.login.LoginTest"/>
+      <class name="project.RegandGuestUser.RegisteredUserShoppingTest"/>
+      <class name="project.RegandGuestUser.GuestUserShoppingTest"/>
+      <class name="project.AdminTest.AdminTest"/>
+    </classes>
+  </test>
+  
+  <test name="Chrome_Test">
+  <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="project.register.RegistrationTest"/>
+      <class name="project.login.LoginTest"/>
+      <class name="project.RegandGuestUser.RegisteredUserShoppingTest"/>
+      <class name="project.RegandGuestUser.GuestUserShoppingTest"/>
+      <class name="project.AdminTest.AdminTest"/>
+    </classes>
+  </test>
+  
+  <test name="Internet Explorer_Test">
+  <parameter name="browser" value="IE"/>
+    <classes>
+      <class name="project.register.RegistrationTest"/>
+      <class name="project.login.LoginTest"/>
+      <class name="project.RegandGuestUser.RegisteredUserShoppingTest"/>
+      <class name="project.RegandGuestUser.GuestUserShoppingTest"/>
+      <class name="project.AdminTest.AdminTest"/>
+    </classes>
+  </test>
+   
+</suite> 
